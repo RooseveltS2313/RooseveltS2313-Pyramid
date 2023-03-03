@@ -26,5 +26,17 @@ public class Application {
         System.out.println(pyr.returnPyramid(3));
         System.out.println("Current output for a size 5 pyramid: ");
         System.out.println(pyr.returnPyramid(5));
+
+        String pyramid = "";
+        int n = 5;
+        
+        for (int i = 0; i <= n; i++){
+            for (int j = 0; j < i; j++){
+               pyramid = pyramid + "*";
+            }
+            pyramid = pyramid + "\n";
+        }
+       
+        System.out.println(pyramid);
     }
 }
